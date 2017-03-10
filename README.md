@@ -1,2 +1,2 @@
 # flexbox
-Just a simple project to practice flexbox and responsive latouts.
+Just a simple project to practice flexbox and responsive layouts.
