@@ -1,0 +1,84 @@
+/* BEGIN FORM SECTION */
+body {
+  background-color: #999;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-row {    
+  padding: 10px 0;
+  display: flex;
+}
+
+.form-row label {
+  padding-right: 10px;
+}
+
+.form-row input {
+  flex: 1;
+}
+
+/* BEGIN 3 COLUMN SECTION */
+.column-layout {
+  max-width: 1400px;
+  background-color: #fff;
+  margin: 40px auto 0 auto;
+  line-height: 1.5;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+@media (min-width: 900px) {
+  .column-layout {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* Use flex: 1; in each column to make them equal widths */
+.main-column {
+  flex-basis: 45%;
+  order: 2;
+}
+
+.sidebar-one {
+  flex-basis: 20%;
+  order: 1;
+}
+
+.sidebar-two {
+  flex-basis: 20%;
+  order: 3;
+}
+
+/* BEGIN CALL OUTS SECTION */
+.call-outs-container {
+  max-width: 1400px;
+  margin: 40px auto 0 auto;
+}
+
+/* Using media query to allow small screens to stack these boxes. 900px and over will form even columns */
+@media (min-width: 900px) {
+  .call-outs-container {
+    display: flex;
+    justify-content: space-between; /* Evenly distrubutes space between items */
+  }
+}
+/* Inside boxes below:
+  Use align-items: flex-start to align flexboxes to top of column, but only filling space below as needed 
+
+  Use align-items: flex-end to align flexboxes to bottom of column, but only filling space above as needed
+*/
+.call-out {
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 30%; /* Replaces width. Defines the default size of an element before the remaining space is distributed. */
+}
+
+.call-out:nth-child(1) {background-color: #c0dbe2;}
+.call-out:nth-child(2) {background-color: #cdf1c3;}
+.call-out:nth-child(3) {background-color: #ccb9da;}
