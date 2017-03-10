@@ -27,31 +27,53 @@ body {
   background-color: #fff;
   margin: 40px auto 0 auto;
   line-height: 1.5;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
+  border: 2px solid blue;
+}
+
+.main-column {
+  border: 4px solid green;
+  background-color: #ccb9da;
+  padding: 0 2%;
+}
+
+.sidebar-one {
+  border: 4px solid green;
+  background-color: #cdf1c3;
+  padding: 0 2%;
+}
+
+.sidebar-two {
+  border: 4px solid green;
+  background-color: #c0dbe2;
+  padding: 0 2%;
 }
 
 @media (min-width: 900px) {
   .column-layout {
     display: flex;
-    justify-content: space-between;
   }
-}
 
 /* Use flex: 1; in each column to make them equal widths */
-.main-column {
-  flex-basis: 45%;
-  order: 2;
-}
+  .main-column {
+    flex-basis: 48.4%;
+    order: 2;
+    border: 2px solid red;
+    padding: 0 2%;
+  }
 
-.sidebar-one {
-  flex-basis: 20%;
-  order: 1;
-}
+  .sidebar-one {
+    flex-basis: 23.3%;
+    order: 1;
+    border: 2px solid red;
+    padding: 0 1.5%;
+  }
 
-.sidebar-two {
-  flex-basis: 20%;
-  order: 3;
+  .sidebar-two {
+    flex-basis: 23.3%;
+    order: 3;
+    border: 2px solid red;
+    padding: 0 1.5%;
+  }
 }
 
 /* BEGIN CALL OUTS SECTION */
