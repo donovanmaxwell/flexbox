@@ -1,2 +1,2 @@
 # flexbox
-Playing with flexbox
+Just a simple project to practice flexbox and responsive latouts.
